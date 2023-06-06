@@ -7,7 +7,8 @@ public class Person {
     String address = "Đông anh, Hà Nội";
     String phone = "0985832268";
 
-    public void getInfo(){
+    public String getInfo(){
+        return name;
 
     }
 }
