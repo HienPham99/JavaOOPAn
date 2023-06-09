@@ -1,5 +1,7 @@
 package com.anhtester.objectclass;
 
+import com.anhtester.phamvitruycap.Student;
+
 import java.util.ArrayList;
 
 public class ThongTinSinhVien1 {
@@ -24,9 +26,16 @@ public class ThongTinSinhVien1 {
             System.out.println(sv.getAge());
             System.out.println(sv.getGender());
             System.out.println(sv.getAddress());
-
-
         }
+
+        ArrayList<String> arrayList = new ArrayList<>();
+        arrayList.add("Selenium");
+        arrayList.add("Auto Test");
+
+        //gọi thông tin từ package khác thông qua phạm vi truy cập public(pakage "phamvitruycap->class "Student"
+        Student student = new Student();
+        student.getInfoStudent();
     }
+
 
 }
